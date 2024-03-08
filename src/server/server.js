@@ -1,10 +1,12 @@
 
 // Import the express library
-const express = require('express');
+//const express = require('express');
+import express from 'express';
 // Import the path library
-const path = require('path');
+//const path = require('path');
+import path from 'path';
 
-const startServer = options=>{
+export const startServer = (options) =>{
     // Extract the port and publicPath from the options object
     const {port, publicPath='public'} = options;
     // Create a new express application
@@ -28,4 +30,4 @@ const startServer = options=>{
     });
 }
 
-module.exports = startServer;
+//module.exports = startServer;
